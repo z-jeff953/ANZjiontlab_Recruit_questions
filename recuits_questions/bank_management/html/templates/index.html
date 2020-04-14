@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BANK MANAGEMENT</title>
+    <script language="javascript">
+        function custom_close() {
+            if (confirm("确认关闭网页?")) {
+                window.opener = null;
+                window.open('', '_self');
+                window.close();
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div align="center">
+    <img src="../statics/zhuye.png" width="588" height="300" border="0" usemap="#Map"/></div>
+<map name="Map" id="Map">
+    <area shape="rect" coords="232,120,351,155" href="http://127.0.0.1:9090/zhuanzhang"/>
+    <area shape="rect" coords="17,122,139,152" href="http://127.0.0.1:9090/login"/>
+    <input id="btnregist" style="margin-left:1150px" type="button" value="注册"
+           onClick="window.location.href='http://127.0.0.1:9090/register'"/>
+    <br></br>
+    <input id="rate" style="margin-left:1150px" type="button" value="跳转到一个实时显示汇率json(没学会怎么显示到网页)"
+           onClick="window.location.href='https://api.jisuapi.com/exchange/convert?appkey=21a0b9ba5e5998f7&from=CNY&to=AUD&amount=10'"/>
+    <br></br>
+    <input id="btnClose" style="margin-left:1150px" type="button" value="关闭" onClick="custom_close()"/>
+</map>
+</body>
+</html>

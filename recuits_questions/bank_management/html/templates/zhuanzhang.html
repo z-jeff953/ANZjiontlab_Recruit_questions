@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>转账界面</title>
+      <link href="statics/css/001.css" rel="stylesheet" as="text/css">
+      
+    </head>
+
+
+        <body>
+   
+            <form id="form1" name="form1" method="post">
+              <table width="570" border="0" align="center">
+                <tr>
+                  <td colspan="2" align=center><H2>转账界面</H2></td>
+                </tr>
+        
+                <tr>
+                  <td colspan="2"><hr width="95%" size="1" color="#FF0000"></td>
+                </tr>
+                <tr>
+                  <td  width="217"><div align="right">ID:<span class="STYLE1">*</span></div></td>
+                  <td width="343"><input type="text" name="id" id="id"  style=width:165pt; maxlength="50"/></td>
+                </tr>
+                <tr>
+                  <td><div align="right">对方姓名:<span class="STYLE1">*</span></div></td>
+                  <td><input type="text" name="target" id="target"  style=width:165pt; maxlength="50"/></td>
+                </tr>
+                <tr>
+                  <td><div align="right">金额:<span class="STYLE1">*</span></div></td>
+                  <td><input type="text" name="money" id="money"  style=width:165pt; maxlength="50"/></td>
+                </tr>
+                <tr>
+                  <td><div align="right">你的密码:<span class="STYLE1">*</span></div></td>
+                  <td><input type="password" name="password" id="password"  style=width:165pt; maxlength="50"/></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><hr width="95%" size="1" color="#FF0000"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><hr width="95%" size="1" color="#FF0000"></td>
+                </tr>
+                <tr>
+                  <td><div align="right">
+                      <input class="btn" id ="subbtn" type="submit" style='font-size:15px' value="提交"/>
+                  </div></td>
+                  <td><div align="center">
+                    <input id="btnClose" style = "font-size:15px" type ="button" value="关闭本页" onClick="custom_close()" />
+                    </div></td>
+                </tr>
+              </table>
+            </form>
+            <script language="javascript" src="../statics/js/003.js"></script>
+          </body>
+
+</html>
